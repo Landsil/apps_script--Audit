@@ -15,8 +15,6 @@ function onOpen() {
   .addItem("GSuite", "GSuite_users")
   .addItem("Slack", "Slack_users")
   .addItem("Microsoft", "Microsoft_users")
-  .addItem("UK backyard", "backyard_UK")
-  .addItem("DE backyard", "backyard_DE")
   .addItem("Atlassian", "atlassian")
   .addItem("Kisi", "Kisi")
   .addToUi();
@@ -28,10 +26,6 @@ var scriptProperties = PropertiesService.getScriptProperties()
     querry_name = scriptProperties.getProperty("querry_name")
     slack_token = scriptProperties.getProperty("slack_token")            // this it a bot taken given when you install app, not secret that APP has.
     microsoft_token = scriptProperties.getProperty("microsoft_token")    // TODO: replace with service account
-    backyard_UK_URL = scriptProperties.getProperty("backyard_UK_URL")
-    auth_BY_UK = scriptProperties.getProperty("auth_BY_UK")              // TODO: replace with service account
-    backyard_DE_URL = scriptProperties.getProperty("backyard_DE_URL")
-    auth_BY_DE = scriptProperties.getProperty("auth_BY_DE")              // TODO: replace with service account
     atlassian_URL = scriptProperties.getProperty("atlassian_URL")        // "<your_domain>.atlassian.net"
     atlassian_token = scriptProperties.getProperty("atlassian_token")
     atlassian_user = scriptProperties.getProperty("atlassian_user")     // TODO: replace with service account
